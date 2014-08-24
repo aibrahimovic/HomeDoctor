@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E80F7D119AA0B11005A58DD /* Symptom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D019AA0B11005A58DD /* Symptom.m */; };
+		0E80F7D519AA0B3B005A58DD /* Disease.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D419AA0B3B005A58DD /* Disease.m */; };
+		0E80F7D819AA0B50005A58DD /* Medicine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D719AA0B50005A58DD /* Medicine.m */; };
 		7002CD8519A9FB87001A3E9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7002CD8419A9FB87001A3E9B /* Foundation.framework */; };
 		7002CD8719A9FB87001A3E9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7002CD8619A9FB87001A3E9B /* CoreGraphics.framework */; };
 		7002CD8919A9FB87001A3E9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7002CD8819A9FB87001A3E9B /* UIKit.framework */; };
@@ -35,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E80F7CF19AA0B11005A58DD /* Symptom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symptom.h; sourceTree = "<group>"; };
+		0E80F7D019AA0B11005A58DD /* Symptom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symptom.m; sourceTree = "<group>"; };
+		0E80F7D319AA0B3B005A58DD /* Disease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disease.h; sourceTree = "<group>"; };
+		0E80F7D419AA0B3B005A58DD /* Disease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Disease.m; sourceTree = "<group>"; };
+		0E80F7D619AA0B50005A58DD /* Medicine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medicine.h; sourceTree = "<group>"; };
+		0E80F7D719AA0B50005A58DD /* Medicine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medicine.m; sourceTree = "<group>"; };
 		7002CD8119A9FB87001A3E9B /* HomeDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7002CD8419A9FB87001A3E9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7002CD8619A9FB87001A3E9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -82,6 +91,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0E80F7D219AA0B1D005A58DD /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				0E80F7CF19AA0B11005A58DD /* Symptom.h */,
+				0E80F7D019AA0B11005A58DD /* Symptom.m */,
+				0E80F7D319AA0B3B005A58DD /* Disease.h */,
+				0E80F7D419AA0B3B005A58DD /* Disease.m */,
+				0E80F7D619AA0B50005A58DD /* Medicine.h */,
+				0E80F7D719AA0B50005A58DD /* Medicine.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
 		7002CD7819A9FB87001A3E9B = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +137,7 @@
 		7002CD8A19A9FB87001A3E9B /* HomeDoctor */ = {
 			isa = PBXGroup;
 			children = (
+				0E80F7D219AA0B1D005A58DD /* Classes */,
 				7002CD9319A9FB87001A3E9B /* HomeDoctorAppDelegate.h */,
 				7002CD9419A9FB87001A3E9B /* HomeDoctorAppDelegate.m */,
 				7002CD9619A9FB87001A3E9B /* Main.storyboard */,
@@ -257,7 +280,10 @@
 			files = (
 				7002CD9E19A9FB87001A3E9B /* HomeDoctorSecondViewController.m in Sources */,
 				7002CD9519A9FB87001A3E9B /* HomeDoctorAppDelegate.m in Sources */,
+				0E80F7D519AA0B3B005A58DD /* Disease.m in Sources */,
+				0E80F7D119AA0B11005A58DD /* Symptom.m in Sources */,
 				7002CD9119A9FB87001A3E9B /* main.m in Sources */,
+				0E80F7D819AA0B50005A58DD /* Medicine.m in Sources */,
 				7002CD9B19A9FB87001A3E9B /* HomeDoctorFirstViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -463,6 +489,7 @@
 				7002CDB819A9FB87001A3E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7002CDB919A9FB87001A3E9B /* Build configuration list for PBXNativeTarget "HomeDoctorTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +498,7 @@
 				7002CDBB19A9FB87001A3E9B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
