@@ -32,4 +32,5 @@
 
 -(void)setDescription:(NSString *)description1 {
     self.description = description1;
-}@end
+}
+@end
