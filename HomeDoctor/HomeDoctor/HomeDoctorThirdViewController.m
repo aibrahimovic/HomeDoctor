@@ -7,6 +7,7 @@
 //
 
 #import "HomeDoctorThirdViewController.h"
+#import "DiseaseViewController.h"
 
 @interface HomeDoctorThirdViewController ()
 
@@ -18,6 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 - (void)didReceiveMemoryWarning
@@ -29,4 +31,30 @@
     [textField resignFirstResponder];
     return YES;
 }
+
+- (IBAction)diseaseClick:(id)sender {
+    @try {
+        [self performSegueWithIdentifier:@"searchDisease" sender:sender];
+        
+    }
+    @catch (NSException *exception) {
+        NSLog(@"%@", exception);
+    }
+}
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"searchDisease"]) {
+         DiseaseViewController *controller = (DiseaseViewController *)[segue destinationViewController];
+        
+        NSString *prenos = self.t_disease.text;
+        [controller setDisease_value:prenos];
+    }
+}
+
+
+
 @end

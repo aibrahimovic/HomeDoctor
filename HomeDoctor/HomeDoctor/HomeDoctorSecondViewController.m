@@ -7,6 +7,7 @@
 //
 
 #import "HomeDoctorSecondViewController.h"
+#import "MedicineViewController.h"
 
 @interface HomeDoctorSecondViewController ()
 
@@ -29,4 +30,30 @@
     [textField resignFirstResponder];
     return YES;
 }
+
+- (IBAction)medicineClick:(id)sender {
+    @try {
+        [self performSegueWithIdentifier:@"searchMedicine" sender:sender];
+        
+    }
+    @catch (NSException *exception) {
+        NSLog(@"%@", exception);
+    }
+}
+
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"searchMedicine"]) {
+        MedicineViewController *controller = (MedicineViewController *)[segue destinationViewController];
+        
+        NSString *prenos = self.t_medicine.text;
+        [controller setMedicine_value:prenos];
+    }
+}
+
+
+
 @end

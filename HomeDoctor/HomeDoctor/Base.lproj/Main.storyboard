@@ -168,7 +168,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="kJZ-c0-Seb" kind="modal" id="ohv-em-YO6"/>
+                                    <action selector="diseaseClick:" destination="ZrR-nI-bVk" eventType="touchDown" id="wUW-Jg-Izy"/>
+                                    <segue destination="kJZ-c0-Seb" kind="modal" identifier="searchDisease" id="ohv-em-YO6"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -221,7 +222,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Ud4-6H-AGS" kind="modal" id="2Uq-NH-V2z"/>
+                                    <action selector="medicineClick:" destination="QUy-BD-bpt" eventType="touchDown" id="rrX-qn-vQV"/>
+                                    <segue destination="Ud4-6H-AGS" kind="modal" identifier="searchMedicine" id="2Uq-NH-V2z"/>
                                 </connections>
                             </button>
                         </subviews>

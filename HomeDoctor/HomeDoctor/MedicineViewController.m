@@ -23,6 +23,11 @@
     return self;
 }
 
+-(void)setMedicine_value:(NSString*)str {
+    self.t_medicineName.text = str;
+    NSLog(@"%@", str);
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];

@@ -20,4 +20,6 @@
 
 @property (weak, nonatomic) IBOutlet UITableView *tl_medicineDiseases;
 
+-(void)setMedicine_value:(NSString*)str;
+
 @end

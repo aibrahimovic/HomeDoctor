@@ -12,5 +12,5 @@
 @property (weak, nonatomic) IBOutlet UITextField *t_diseaseName;
 @property (weak, nonatomic) IBOutlet UITableView *tl_diseaseSymptoms;
 @property (weak, nonatomic) IBOutlet UITableView *tl_diseaseMedicine;
-
+-(void)setDisease_value:(NSString*)str;
 @end
