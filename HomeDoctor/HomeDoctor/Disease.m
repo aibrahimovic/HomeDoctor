@@ -9,10 +9,10 @@
 #import "Disease.h"
 
 @implementation Disease
--(id)initDiseaseId:(int)_id Name:(NSString *)name lSymptoms:(NSArray *)symptoms lMedicine:(NSArray *)medicine {
+-(id)initDiseaseId:(int)idD Name:(NSString *)name lSymptoms:(NSArray *)symptoms lMedicine:(NSArray *)medicine {
     
     self = [super init];
-    self._id = _id;
+    self.idD = idD;
     self.name = name;
     self.listSymptoms= symptoms;
     self.listMedicine = medicine;
@@ -20,11 +20,11 @@
 }
 
 -(int)getId {
-    return self._id;
+    return self.idD;
 }
 
 -(void)setId:(int)id1 {
-    self._id = id1;
+    self.idD = id1;
 }
 
 -(NSString*)getName {

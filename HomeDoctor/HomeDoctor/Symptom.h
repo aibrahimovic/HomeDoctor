@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Symptom : NSObject
-@property int _id;
+@property int idS;
 @property NSString * description;
 
--(id)initSymptomId:(int)_id Description:(NSString*)desc;
+-(id)initSymptomId:(int)idS Description:(NSString*)desc;
 -(int)getId;
 -(void)setId:(int)id1;
 -(NSString*)getDescription;

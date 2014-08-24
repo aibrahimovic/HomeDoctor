@@ -9,12 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface Disease : NSObject
-@property int _id;
+@property int idD;
 @property NSString * name;
 @property NSArray *listSymptoms;
 @property NSArray *listMedicine;
 
--(id)initDiseaseId:(int)_id Name:(NSString*)name lSymptoms:(NSArray*)symptoms lMedicine:(NSArray*)medicine;
+-(id)initDiseaseId:(int)idD Name:(NSString*)name lSymptoms:(NSArray*)symptoms lMedicine:(NSArray*)medicine;
 -(int)getId;
 -(void)setId:(int)id1;
 -(NSString*)getName;
