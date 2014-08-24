@@ -1,18 +1,18 @@
 //
-//  HomeDoctorSecondViewController.m
+//  HomeDoctorThirdViewController.m
 //  HomeDoctor
 //
-//  Created by user23960 on 8/24/14.
+//  Created by user23678 on 8/24/14.
 //  Copyright (c) 2014 Azra. All rights reserved.
 //
 
-#import "HomeDoctorSecondViewController.h"
+#import "HomeDoctorThirdViewController.h"
 
-@interface HomeDoctorSecondViewController ()
+@interface HomeDoctorThirdViewController ()
 
 @end
 
-@implementation HomeDoctorSecondViewController
+@implementation HomeDoctorThirdViewController
 
 - (void)viewDidLoad
 {

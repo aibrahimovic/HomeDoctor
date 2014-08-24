@@ -10,4 +10,6 @@
 
 @interface HomeDoctorSecondViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *t_medicine;
+
 @end

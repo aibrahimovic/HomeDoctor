@@ -30,7 +30,7 @@
     return self.description;
 }
 
--(void)setDescription:(NSString *)description1 {
+/*-(void)setDescription:(NSString *)description1 {
     self.description = description1;
-}
+}*/
 @end

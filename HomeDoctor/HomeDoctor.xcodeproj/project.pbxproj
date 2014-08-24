@@ -10,6 +10,7 @@
 		0E80F7D119AA0B11005A58DD /* Symptom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D019AA0B11005A58DD /* Symptom.m */; };
 		0E80F7D519AA0B3B005A58DD /* Disease.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D419AA0B3B005A58DD /* Disease.m */; };
 		0E80F7D819AA0B50005A58DD /* Medicine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D719AA0B50005A58DD /* Medicine.m */; };
+		0E80F7DB19AA0E79005A58DD /* HomeDoctorThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7DA19AA0E79005A58DD /* HomeDoctorThirdViewController.m */; };
 		7002CD8519A9FB87001A3E9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7002CD8419A9FB87001A3E9B /* Foundation.framework */; };
 		7002CD8719A9FB87001A3E9B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7002CD8619A9FB87001A3E9B /* CoreGraphics.framework */; };
 		7002CD8919A9FB87001A3E9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7002CD8819A9FB87001A3E9B /* UIKit.framework */; };
@@ -44,6 +45,8 @@
 		0E80F7D419AA0B3B005A58DD /* Disease.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Disease.m; sourceTree = "<group>"; };
 		0E80F7D619AA0B50005A58DD /* Medicine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Medicine.h; sourceTree = "<group>"; };
 		0E80F7D719AA0B50005A58DD /* Medicine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Medicine.m; sourceTree = "<group>"; };
+		0E80F7D919AA0E79005A58DD /* HomeDoctorThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDoctorThirdViewController.h; sourceTree = "<group>"; };
+		0E80F7DA19AA0E79005A58DD /* HomeDoctorThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDoctorThirdViewController.m; sourceTree = "<group>"; };
 		7002CD8119A9FB87001A3E9B /* HomeDoctor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HomeDoctor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7002CD8419A9FB87001A3E9B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		7002CD8619A9FB87001A3E9B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -145,6 +148,8 @@
 				7002CD9A19A9FB87001A3E9B /* HomeDoctorFirstViewController.m */,
 				7002CD9C19A9FB87001A3E9B /* HomeDoctorSecondViewController.h */,
 				7002CD9D19A9FB87001A3E9B /* HomeDoctorSecondViewController.m */,
+				0E80F7D919AA0E79005A58DD /* HomeDoctorThirdViewController.h */,
+				0E80F7DA19AA0E79005A58DD /* HomeDoctorThirdViewController.m */,
 				7002CD9F19A9FB87001A3E9B /* Images.xcassets */,
 				7002CD8B19A9FB87001A3E9B /* Supporting Files */,
 			);
@@ -278,6 +283,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E80F7DB19AA0E79005A58DD /* HomeDoctorThirdViewController.m in Sources */,
 				7002CD9E19A9FB87001A3E9B /* HomeDoctorSecondViewController.m in Sources */,
 				7002CD9519A9FB87001A3E9B /* HomeDoctorAppDelegate.m in Sources */,
 				0E80F7D519AA0B3B005A58DD /* Disease.m in Sources */,

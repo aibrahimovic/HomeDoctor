@@ -31,9 +31,9 @@
     return self.name;
 }
 
--(void)setName:(NSString *)name1 {
+/*-(void)setName:(NSString *)name1 {
     self.name = name1;
-}
+}*/
 
 -(int)symptomsNumber {
     int sNum;
