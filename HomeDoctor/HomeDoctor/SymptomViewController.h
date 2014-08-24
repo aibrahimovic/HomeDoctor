@@ -15,5 +15,6 @@
 
 -(void)setSymptom_value:(Symptom*)s;
 -(void)setSymptom_proba:(NSString*)str;
+-(void)writeSymptom:(NSString*)str;
 
 @end

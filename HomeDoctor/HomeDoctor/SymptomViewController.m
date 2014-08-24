@@ -7,6 +7,7 @@
 //
 
 #import "SymptomViewController.h"
+#import "Symptom.h"
 
 @interface SymptomViewController ()
 
@@ -28,12 +29,31 @@
     self.t_symptomName.text = str;
     NSLog(@"%@", str);
 }
+
+
+-(void)writeSymptom:(NSString*)str {
+    Symptom *s;
+    s = [Symptom alloc];
+    s.idS = 1;
+    s.description = @"Glavobolja";
+   
+    NSArray *probni = [NSArray arrayWithObject:s];
+    //probni = [[NSArray alloc] initWithObjects:s, nil];
+    for (Symptom *sy in probni) {
+        if (sy.description == str) {
+            NSLog(@"radi");
+        }
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    //self.t_symptomName.text =@"probam";
-
+    self.t_symptomName.text =@"Glavobolja";
+    NSString *pom = self.t_symptomName.text;
+    //NSLog(@"%@", pom);
+    [self writeSymptom:pom];
 }
 
 - (void)didReceiveMemoryWarning
