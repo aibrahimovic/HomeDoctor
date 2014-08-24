@@ -23,10 +23,17 @@
     return self;
 }
 
+-(void)setSymptom_proba:(NSString*)str {
+    //self.t_symptomName.text = @"hepek";
+    self.t_symptomName.text = str;
+    NSLog(@"%@", str);
+}
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //self.t_symptomName.text =@"probam";
+
 }
 
 - (void)didReceiveMemoryWarning
@@ -34,6 +41,11 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+-(void)setSymptom_value:(Symptom*)s {
+    
+}
+
 
 /*
 #pragma mark - Navigation
