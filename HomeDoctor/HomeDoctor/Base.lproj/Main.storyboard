@@ -42,6 +42,9 @@
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="GDE-vX-oTb" kind="modal" id="Axr-Bb-l2N"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -72,7 +75,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Symptom:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mf8-Lv-52m">
-                                <rect key="frame" x="27" y="80" width="79" height="21"/>
+                                <rect key="frame" x="20" y="80" width="79" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="highlightedColor"/>
@@ -101,12 +104,20 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v5r-R1-o5B">
+                                <rect key="frame" x="20" y="25" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="t_symptomName" destination="rBb-JY-Rpq" id="EnD-s1-NCh"/>
                         <outlet property="tl_symptomDiseases" destination="F2D-nM-yKu" id="d0k-bO-9aw"/>
+                        <segue destination="CZ4-MO-1fc" kind="modal" id="DOV-M1-jaH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TqH-LT-XcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -149,6 +160,9 @@
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="kJZ-c0-Seb" kind="modal" id="ohv-em-YO6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -199,6 +213,9 @@
                                 <state key="normal" title="Search">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <segue destination="Ud4-6H-AGS" kind="modal" id="2Uq-NH-V2z"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -303,6 +320,7 @@
                         <outlet property="t_medicineStructure" destination="ywp-vI-cSV" id="N5s-kp-ZZp"/>
                         <outlet property="t_medicineUses" destination="fXn-YM-axW" id="3G6-fm-9K9"/>
                         <outlet property="tl_medicineDiseases" destination="Uuc-O1-Xwi" id="wh1-6m-8Kr"/>
+                        <segue destination="QUy-BD-bpt" kind="modal" id="0d8-7M-l3A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jQv-ey-h30" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -397,4 +415,8 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="DOV-M1-jaH"/>
+        <segue reference="0d8-7M-l3A"/>
+    </inferredMetricsTieBreakers>
 </document>
