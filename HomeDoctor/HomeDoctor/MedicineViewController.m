@@ -9,7 +9,7 @@
 #import "MedicineViewController.h"
 
 @interface MedicineViewController ()
-
+@property NSString* probni;
 @end
 
 @implementation MedicineViewController
@@ -24,14 +24,15 @@
 }
 
 -(void)setMedicine_value:(NSString*)str {
-    self.t_medicineName.text = str;
-    NSLog(@"%@", str);
+    self.probni = str;
+    //NSLog(@"%@", str);
 }
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.t_medicineName.text = self.probni;
 }
 
 - (void)didReceiveMemoryWarning

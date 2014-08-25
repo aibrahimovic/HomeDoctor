@@ -9,7 +9,7 @@
 #import "DiseaseViewController.h"
 
 @interface DiseaseViewController ()
-
+@property NSString* a;
 @end
 
 @implementation DiseaseViewController
@@ -24,13 +24,14 @@
 }
 
 -(void)setDisease_value:(NSString*)str {
-    self.t_diseaseName.text = str;
-    NSLog(@"%@", str);    
+    self.a = str;
+    //NSLog(@"%@", str);
 }
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.t_diseaseName.text = self.a;
 }
 
 - (void)didReceiveMemoryWarning

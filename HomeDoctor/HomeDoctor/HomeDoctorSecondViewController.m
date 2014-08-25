@@ -51,6 +51,7 @@
         
         NSString *prenos = self.t_medicine.text;
         [controller setMedicine_value:prenos];
+        //controller.t_medicineName.text = self.t_medicine.text;
     }
 }
 

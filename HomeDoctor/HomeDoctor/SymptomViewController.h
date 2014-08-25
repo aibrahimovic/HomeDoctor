@@ -17,4 +17,5 @@
 -(void)setSymptom_proba:(NSString*)str;
 -(void)writeSymptom:(NSString*)str;
 
+@property (strong, nonatomic) IBOutletCollection(UITextView) NSArray *probniList;
 @end

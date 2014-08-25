@@ -10,7 +10,7 @@
 #import "Symptom.h"
 
 @interface SymptomViewController ()
-
+@property NSString* probni;
 @end
 
 @implementation SymptomViewController
@@ -25,9 +25,8 @@
 }
 
 -(void)setSymptom_proba:(NSString*)str {
-    //self.t_symptomName.text = @"hepek";
-    self.t_symptomName.text = str;
-    NSLog(@"%@", str);
+    self.probni = str;
+    //NSLog(@"%@", str);
 }
 
 
@@ -49,11 +48,16 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.t_symptomName.text = self.probni;
     // Do any additional setup after loading the view.
-    self.t_symptomName.text =@"Glavobolja";
-    NSString *pom = self.t_symptomName.text;
+    //self.t_symptomName.text =@"Glavobolja";
+    //NSString *pom = self.t_symptomName.text;
     //NSLog(@"%@", pom);
-    [self writeSymptom:pom];
+    //[self writeSymptom:pom];
+   // NSArray *a = [NSArray arrayWithObject:@"Azra"];
+    
+    //self.probniList.text = a;
+    
 }
 
 - (void)didReceiveMemoryWarning
