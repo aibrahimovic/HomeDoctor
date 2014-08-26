@@ -9,7 +9,14 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeDoctorSecondViewController : UIViewController
-
+{
+    NSArray *listOfMedicine;
+}
 @property (weak, nonatomic) IBOutlet UITextField *t_medicine;
+
+//@property (nonatomic, retain) NSArray *medicineList;
+
+@property (nonatomic, retain) IBOutletCollection(UITableView) NSArray *medicineList;
+
 
 @end

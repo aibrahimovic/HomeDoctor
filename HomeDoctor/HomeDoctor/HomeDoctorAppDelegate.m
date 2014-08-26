@@ -8,11 +8,21 @@
 
 #import "HomeDoctorAppDelegate.h"
 
+#import "HomeDoctorDatabase.h"
+#import "Medicine.h"
+
+
 @implementation HomeDoctorAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSArray *homeDInfos = [HomeDoctorDatabase database].info;
+    for (Medicine *med in homeDInfos) {
+        NSLog(@"%d: %@, %@, %@, %@", med.idM, med.name, med.structure, med.uses, med.sideEffects);
+    }
+    
     return YES;
 }
 							

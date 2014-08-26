@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E49552819ACFE28003604E3 /* HomeDoctorDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E49552719ACFE28003604E3 /* HomeDoctorDatabase.m */; };
 		0E80F7D119AA0B11005A58DD /* Symptom.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D019AA0B11005A58DD /* Symptom.m */; };
 		0E80F7D519AA0B3B005A58DD /* Disease.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D419AA0B3B005A58DD /* Disease.m */; };
 		0E80F7D819AA0B50005A58DD /* Medicine.m in Sources */ = {isa = PBXBuildFile; fileRef = 0E80F7D719AA0B50005A58DD /* Medicine.m */; };
@@ -43,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0E49552619ACFE28003604E3 /* HomeDoctorDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDoctorDatabase.h; sourceTree = "<group>"; };
+		0E49552719ACFE28003604E3 /* HomeDoctorDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDoctorDatabase.m; sourceTree = "<group>"; };
 		0E80F7CF19AA0B11005A58DD /* Symptom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Symptom.h; sourceTree = "<group>"; };
 		0E80F7D019AA0B11005A58DD /* Symptom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Symptom.m; sourceTree = "<group>"; };
 		0E80F7D319AA0B3B005A58DD /* Disease.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Disease.h; sourceTree = "<group>"; };
@@ -172,6 +175,8 @@
 				7002CD8B19A9FB87001A3E9B /* Supporting Files */,
 				708384B419ACD5E300E6C283 /* SymptomTableViewCell.h */,
 				708384B519ACD5E300E6C283 /* SymptomTableViewCell.m */,
+				0E49552619ACFE28003604E3 /* HomeDoctorDatabase.h */,
+				0E49552719ACFE28003604E3 /* HomeDoctorDatabase.m */,
 			);
 			path = HomeDoctor;
 			sourceTree = "<group>";
@@ -313,6 +318,7 @@
 				0E80F7D519AA0B3B005A58DD /* Disease.m in Sources */,
 				0E80F7D119AA0B11005A58DD /* Symptom.m in Sources */,
 				7002CD9119A9FB87001A3E9B /* main.m in Sources */,
+				0E49552819ACFE28003604E3 /* HomeDoctorDatabase.m in Sources */,
 				0E80F7D819AA0B50005A58DD /* Medicine.m in Sources */,
 				7002CD9B19A9FB87001A3E9B /* HomeDoctorFirstViewController.m in Sources */,
 			);

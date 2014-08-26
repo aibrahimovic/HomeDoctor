@@ -8,18 +8,22 @@
 
 #import "HomeDoctorSecondViewController.h"
 #import "MedicineViewController.h"
+#import "HomeDoctorDatabase.h"
 
 @interface HomeDoctorSecondViewController ()
 
 @end
 
 @implementation HomeDoctorSecondViewController
+@synthesize medicineList = listOfMedicine;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-}
+    
+    self.medicineList = [HomeDoctorDatabase database].info;
+    self.title = @"List of medicine";}
 
 - (void)didReceiveMemoryWarning
 {
@@ -40,6 +44,7 @@
         NSLog(@"%@", exception);
     }
 }
+//IN DEALLOC SE TREBA OVO NAPISATI self.medicineList = nil;
 
 #pragma mark - Navigation
 
