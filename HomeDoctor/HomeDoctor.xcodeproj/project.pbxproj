@@ -29,6 +29,7 @@
 		7002CDA919A9FB87001A3E9B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7002CD8819A9FB87001A3E9B /* UIKit.framework */; };
 		7002CDB119A9FB87001A3E9B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7002CDAF19A9FB87001A3E9B /* InfoPlist.strings */; };
 		7002CDB319A9FB87001A3E9B /* HomeDoctorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7002CDB219A9FB87001A3E9B /* HomeDoctorTests.m */; };
+		708384B619ACD5E300E6C283 /* SymptomTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 708384B519ACD5E300E6C283 /* SymptomTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		7002CDAE19A9FB87001A3E9B /* HomeDoctorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HomeDoctorTests-Info.plist"; sourceTree = "<group>"; };
 		7002CDB019A9FB87001A3E9B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		7002CDB219A9FB87001A3E9B /* HomeDoctorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeDoctorTests.m; sourceTree = "<group>"; };
+		708384B419ACD5E300E6C283 /* SymptomTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SymptomTableViewCell.h; sourceTree = "<group>"; };
+		708384B519ACD5E300E6C283 /* SymptomTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SymptomTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +170,8 @@
 				0E80F7E319AA1461005A58DD /* DiseaseViewController.m */,
 				7002CD9F19A9FB87001A3E9B /* Images.xcassets */,
 				7002CD8B19A9FB87001A3E9B /* Supporting Files */,
+				708384B419ACD5E300E6C283 /* SymptomTableViewCell.h */,
+				708384B519ACD5E300E6C283 /* SymptomTableViewCell.m */,
 			);
 			path = HomeDoctor;
 			sourceTree = "<group>";
@@ -303,6 +308,7 @@
 				0E80F7DE19AA11A9005A58DD /* SymptomViewController.m in Sources */,
 				7002CD9E19A9FB87001A3E9B /* HomeDoctorSecondViewController.m in Sources */,
 				0E80F7E419AA1461005A58DD /* DiseaseViewController.m in Sources */,
+				708384B619ACD5E300E6C283 /* SymptomTableViewCell.m in Sources */,
 				7002CD9519A9FB87001A3E9B /* HomeDoctorAppDelegate.m in Sources */,
 				0E80F7D519AA0B3B005A58DD /* Disease.m in Sources */,
 				0E80F7D119AA0B11005A58DD /* Symptom.m in Sources */,

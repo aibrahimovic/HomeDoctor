@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MedicineViewController : UIViewController
+@interface MedicineViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (weak, nonatomic) IBOutlet UITextField *t_medicineName;
 
@@ -19,6 +19,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *t_medicineSideEffects;
 
 @property (weak, nonatomic) IBOutlet UITableView *tl_medicineDiseases;
+
+
 
 -(void)setMedicine_value:(NSString*)str;
 

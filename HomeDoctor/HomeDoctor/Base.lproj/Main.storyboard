@@ -67,6 +67,7 @@
         <!--Symptom View Controller-->
         <scene sceneID="d8y-Ky-h7q">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TqH-LT-XcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="GDE-vX-oTb" customClass="SymptomViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hnb-rN-6Mo"/>
@@ -99,23 +100,19 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qGY-kC-uqu">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="qGY-kC-uqu" customClass="SymptomTableViewCell">
                                         <rect key="frame" x="0.0" y="22" width="280" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qGY-kC-uqu" id="srT-1D-3Pj">
-                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="247" height="43"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="kJZ-c0-Seb" kind="push" identifier="idi" id="i8R-eL-eNu"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDB-TE-hUZ">
-                                <rect key="frame" x="160" y="435" width="140" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Search">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5fg-LW-DFH">
                                 <rect key="frame" x="0.0" y="16" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
@@ -132,12 +129,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7u7-A1-S0b"/>
                     <connections>
                         <outlet property="t_symptomName" destination="rBb-JY-Rpq" id="EnD-s1-NCh"/>
                         <outlet property="tl_symptomDiseases" destination="F2D-nM-yKu" id="d0k-bO-9aw"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TqH-LT-XcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1302" y="-151"/>
         </scene>
@@ -420,6 +417,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="bIN-HV-YB8"/>
                     <connections>
                         <outlet property="t_diseaseName" destination="GbQ-Te-dWJ" id="W63-YV-pc3"/>
                         <outlet property="tl_diseaseMedicine" destination="hlx-sj-TZr" id="Vln-pE-A8Q"/>
@@ -460,6 +458,7 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
+        <segue reference="i8R-eL-eNu"/>
         <segue reference="zVS-lf-vdw"/>
     </inferredMetricsTieBreakers>
 </document>

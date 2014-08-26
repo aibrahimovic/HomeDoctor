@@ -8,9 +8,11 @@
 
 #import "SymptomViewController.h"
 #import "Symptom.h"
+#import "SymptomTableViewCell.h"
 
 @interface SymptomViewController ()
 @property NSString* probni;
+@property NSArray *niz;
 @end
 
 @implementation SymptomViewController
@@ -49,15 +51,7 @@
 {
     [super viewDidLoad];
     self.t_symptomName.text = self.probni;
-    // Do any additional setup after loading the view.
-    //self.t_symptomName.text =@"Glavobolja";
-    //NSString *pom = self.t_symptomName.text;
-    //NSLog(@"%@", pom);
-    //[self writeSymptom:pom];
-   // NSArray *a = [NSArray arrayWithObject:@"Azra"];
-    
-    //self.probniList.text = a;
-    
+    self.niz = @[@"Azra"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -68,6 +62,62 @@
 
 -(void)setSymptom_value:(Symptom*)s {
     
+}
+
+-(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+//nesto ne valja ovdje
+    return 1;
+}
+
+- (IBAction)infoClicked:(id)sender {
+    [self performSegueWithIdentifier:@"idi" sender:sender];
+}
+
+//proba
+
+-(UITableViewCell*)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    SymptomTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"idi"
+                                  forIndexPath:indexPath];
+    
+    if (cell == nil)
+    {
+        cell = [[SymptomTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"idi"];
+    }
+    
+    cell.textLabel.text = [self.niz objectAtIndex:indexPath.row];
+    return cell;
+}
+
+
+- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    // Return NO if you do not want the specified item to be editable.
+    return YES;
+}
+
+/*if ([[segue identifier] isEqualToString:@"showDetail"]) {
+ NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+ NSManagedObject *object = [[self fetchedResultsController] objectAtIndexPath:indexPath];
+ [[segue destinationViewController] setDetailItem:object];
+ }*/
+
+-(void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if([[segue identifier] isEqualToString:@"idi"])
+    {
+        /*NSIndexPath *indeks = [self.slanaKategorije indexPathForSelectedRow];
+        NSString *string = [_kategorijeNiz objectAtIndex:indeks.row];
+        //ReceptiTableViewController *slanaJelaTable = (ReceptiTableViewController*)[segue destinationViewController];
+        [[segue destinationViewController] posaljiKategoriju:string];*/
+        
+    }
 }
 
 

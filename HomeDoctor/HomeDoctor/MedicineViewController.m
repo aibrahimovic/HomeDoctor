@@ -7,9 +7,12 @@
 //
 
 #import "MedicineViewController.h"
+#import "Medicine.h"
 
 @interface MedicineViewController ()
 @property NSString* probni;
+@property NSArray *nizMeddicine;
+@property Medicine *m;
 @end
 
 @implementation MedicineViewController
@@ -28,11 +31,33 @@
     //NSLog(@"%@", str);
 }
 
+-(void)postaviSve:(NSString*)str {
+    for (Medicine *me in self.nizMeddicine) {
+        if (me.name == str) {
+            self.t_medicineStructure.text = me.structure;
+            self.t_medicineUses.text = me.uses;
+            self.t_medicineSideEffects.text = me.sideEffects;
+        }
+    }
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.nizMeddicine = [NSArray alloc];
+    self.m = [Medicine alloc];
     self.t_medicineName.text = self.probni;
+    self.m.idM = 1;
+    self.m.name = @"Neofen";
+    self.m.structure = @"Ibuprofen";
+    self.m.uses = @"Jedna tableta";
+    self.m.sideEffects = @"Nema";
+    
+    self.nizMeddicine = @[self.m];
+    NSString *a = self.t_medicineName.text;
+    NSLog(@"%@", a);
+    [self postaviSve:@"Neofen"];
 }
 
 - (void)didReceiveMemoryWarning
