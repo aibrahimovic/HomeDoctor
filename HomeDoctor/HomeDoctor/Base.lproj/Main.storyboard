@@ -98,6 +98,16 @@
                                 <rect key="frame" x="20" y="189" width="280" height="238"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qGY-kC-uqu">
+                                        <rect key="frame" x="0.0" y="22" width="280" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qGY-kC-uqu" id="srT-1D-3Pj">
+                                            <rect key="frame" x="0.0" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tDB-TE-hUZ">
                                 <rect key="frame" x="160" y="435" width="140" height="36"/>
@@ -113,26 +123,18 @@
                                     <navigationItem id="j7l-gF-abN">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="JFV-UG-pjd">
                                             <connections>
-                                                <segue destination="CZ4-MO-1fc" kind="modal" id="zBL-2y-wG8"/>
+                                                <segue destination="8YX-ce-x5E" kind="modal" id="zVS-lf-vdw"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="K5R-Wg-iGK">
-                                <rect key="frame" x="60" y="403" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="t_symptomName" destination="rBb-JY-Rpq" id="EnD-s1-NCh"/>
                         <outlet property="tl_symptomDiseases" destination="F2D-nM-yKu" id="d0k-bO-9aw"/>
-                        <outletCollection property="probniList" destination="K5R-Wg-iGK" id="rSV-Xw-ehn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TqH-LT-XcX" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -335,7 +337,7 @@
                                     <navigationItem id="mDQ-b6-gbG">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="Pcr-Ag-8Ki">
                                             <connections>
-                                                <segue destination="QUy-BD-bpt" kind="modal" id="P3v-u7-gwg"/>
+                                                <segue destination="8YX-ce-x5E" kind="modal" id="pOW-Lx-AuN"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -409,7 +411,7 @@
                                     <navigationItem id="S98-sj-BFd">
                                         <barButtonItem key="leftBarButtonItem" title="&lt; Back" id="osD-Ik-E4Z">
                                             <connections>
-                                                <segue destination="ZrR-nI-bVk" kind="modal" id="lxc-gz-GKB"/>
+                                                <segue destination="8YX-ce-x5E" kind="modal" id="Szv-z6-dSK"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
@@ -458,8 +460,6 @@
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="zBL-2y-wG8"/>
-        <segue reference="P3v-u7-gwg"/>
-        <segue reference="lxc-gz-GKB"/>
+        <segue reference="zVS-lf-vdw"/>
     </inferredMetricsTieBreakers>
 </document>
