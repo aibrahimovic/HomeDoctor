@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @interface HomeDoctorAppDelegate : UIResponder <UIApplicationDelegate>
+{
+    UIWindow *window;
+    UITabBarController  *_navController;
+}
 
+@property (nonatomic, retain) IBOutlet UITabBarController *navController;
 @property (strong, nonatomic) UIWindow *window;
 
 @end

@@ -14,6 +14,8 @@
 
 @implementation HomeDoctorAppDelegate
 
+@synthesize navController = _navController;
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
@@ -23,7 +25,10 @@
         NSLog(@"%d: %@, %@, %@, %@", med.idM, med.name, med.structure, med.uses, med.sideEffects);
     }
     
+    [window addSubview:_navController.view];
     return YES;
+    // IN DEALOC  self.navController = nil;
+
 }
 							
 - (void)applicationWillResignActive:(UIApplication *)application

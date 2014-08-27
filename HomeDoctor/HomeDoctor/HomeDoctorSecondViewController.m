@@ -9,6 +9,7 @@
 #import "HomeDoctorSecondViewController.h"
 #import "MedicineViewController.h"
 #import "HomeDoctorDatabase.h"
+#import "Medicine.h"
 
 @interface HomeDoctorSecondViewController ()
 
@@ -16,6 +17,7 @@
 
 @implementation HomeDoctorSecondViewController
 @synthesize medicineList = listOfMedicine;
+
 
 - (void)viewDidLoad
 {
@@ -30,6 +32,9 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+
+
+
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
     [textField resignFirstResponder];
     return YES;
@@ -44,6 +49,7 @@
         NSLog(@"%@", exception);
     }
 }
+
 //IN DEALLOC SE TREBA OVO NAPISATI self.medicineList = nil;
 
 #pragma mark - Navigation
@@ -60,6 +66,26 @@
     }
 }
 
+#pragma mark - Table View
+
+- (NSInteger)tableView:(UITableView *)tableView
+ numberOfRowsInSection:(NSInteger)section {
+    return [self.medicineList count];
+    
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell =
+    [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+   
+    Medicine *object =[listOfMedicine objectAtIndex:indexPath.row];
+    
+    cell.textLabel.text = object.name;
+    return cell;
+}
 
 
 @end

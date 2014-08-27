@@ -12,7 +12,7 @@
 @implementation HomeDoctorDatabase
 
 static HomeDoctorDatabase *_database;
-
+/*
 + (HomeDoctorDatabase*)database {
     if (_database == nil) {
         _database = [[HomeDoctorDatabase alloc] init];
@@ -34,7 +34,10 @@ static HomeDoctorDatabase *_database;
 - (void)dealloc {
     sqlite3_close(_database);
     //[super dealloc];
-}
+}*/
+
+
+/*
 - (NSArray *)info{
     
    // NSMutableArray *retval = [[[NSMutableArray alloc] init] autorelease];
@@ -66,5 +69,5 @@ static HomeDoctorDatabase *_database;
    // return retval;
     return @"blab";
     
-}
+}*/
 @end
