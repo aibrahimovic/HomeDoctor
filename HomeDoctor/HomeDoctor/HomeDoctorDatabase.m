@@ -12,16 +12,16 @@
 @implementation HomeDoctorDatabase
 
 static HomeDoctorDatabase *_database;
-/*
+
 + (HomeDoctorDatabase*)database {
     if (_database == nil) {
         _database = [[HomeDoctorDatabase alloc] init];
     }
     return _database;
-}
+}/*
 - (id)init {
     if ((self = [super init])) {
-        NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"banklist"
+        NSString *sqLiteDb = [[NSBundle mainBundle] pathForResource:@"medicine"
                                                              ofType:@"sqlite3"];
         
         if (sqlite3_open([sqLiteDb UTF8String], &_database) != SQLITE_OK) {
