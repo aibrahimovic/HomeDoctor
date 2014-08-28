@@ -51,7 +51,7 @@
         
         NSString *prenos = self.t_symptom.text;
         [controller setSymptom_proba:prenos];
-        }
+    }
 }
 
 
